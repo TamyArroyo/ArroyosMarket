@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingresado"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/fondoh">
+
+    <!-- Imagen de Logo -->
+    <ImageView
+        android:layout_width="346dp"
+        android:layout_height="157dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo3" />
+
+    <!-- EditText para ID del Producto -->
+    <EditText
+        android:id="@+id/etIdProducto"
+        android:layout_width="258dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="ID Producto"
+        android:textSize="20dp" />
+
+    <!-- EditText para Nombre del Producto -->
+    <EditText
+        android:layout_width="258dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Producto"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/etNombreProducto"/>
+
+    <!-- EditText para Precio del Producto -->
+    <EditText
+        android:layout_width="258dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/etPrecio"/>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="#66FF5722"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnBuscar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#66FF5722"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnAgregar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificar"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#66FF5722"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnModificar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#66FF5722"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnEliminar"/>
+    </LinearLayout>
+
+
+</LinearLayout>
